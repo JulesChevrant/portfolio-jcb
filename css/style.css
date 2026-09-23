@@ -337,8 +337,12 @@ section + section {
 }
 
 /* ----- Cartes études de cas (accueil) ----- */
+.hero + .case-studies-section {
+  margin-top: 5rem; /* 80px + 16px de marge du pitch = ~96px */
+}
+
 .case-studies-section {
-  margin-bottom: var(--space-xl);
+  margin-bottom: 0; /* seul le padding bas de main (56px) sépare les cards du footer */
 }
 
 .case-studies {
@@ -362,12 +366,15 @@ section + section {
   padding: var(--space-md);
   display: flex;
   flex-direction: column;
-  transition: border-color 0.2s ease;
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    border-color 0.18s ease;
 }
 
 .case-card:hover,
 .case-card:focus-within {
   border-color: rgba(239, 159, 39, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
 }
 
 .case-number {
@@ -619,7 +626,7 @@ section + section {
 
 
 .footer-bottom {
-  margin-top: var(--space-lg);
+  margin-top: 2rem;
   padding-top: var(--space-md);
   border-top: 1px solid var(--color-border);
   color: var(--color-text-muted);
