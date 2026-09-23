@@ -181,8 +181,9 @@ p {
 }
 
 .nav-list a {
-  color: var(--color-text);
+  color: var(--color-text-muted);
   font-size: 0.95rem;
+  font-weight: 500;
   padding-bottom: 0.3rem;
   border-bottom: 2px solid transparent;
 }
@@ -190,6 +191,7 @@ p {
 .nav-list a:hover,
 .nav-list a:focus-visible {
   color: var(--color-accent);
+  text-decoration: none;
 }
 
 .nav-list a[aria-current="page"] {
