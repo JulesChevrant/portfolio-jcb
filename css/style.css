@@ -148,15 +148,13 @@ p {
 }
 
 .nav-brand {
-  font-weight: 600;
-  color: var(--color-text);
-  font-size: 1.05rem;
+  display: block;
 }
 
-.nav-brand:hover,
-.nav-brand:focus-visible {
-  text-decoration: none;
-  color: var(--color-accent);
+.nav-logo {
+  display: block;
+  height: 40px;
+  width: auto;
 }
 
 .nav-toggle {
