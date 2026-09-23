@@ -16,7 +16,7 @@
   --color-accent: #ef9f27;
   --color-accent-hover: #ffbc5c;
 
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
 
   --max-width: 1440px;
