@@ -85,7 +85,8 @@ h1 {
   margin-bottom: var(--space-md);
 }
 
-h2 {
+h2,
+.section-title {
   position: relative;
   font-size: clamp(1.5rem, 3vw, 2rem);
   color: var(--color-accent);
@@ -93,7 +94,8 @@ h2 {
   margin-bottom: var(--space-md);
 }
 
-h2::before {
+h2::before,
+.section-title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -240,6 +242,29 @@ p {
   }
 }
 
+/* ----- Signature graphique : règle verticale pointillée (accueil) ----- */
+.page-rule {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 48px;
+  width: 1px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(157, 179, 204, 0.35) 5px,
+    transparent 5px
+  );
+  background-size: 1px 17px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .page-rule {
+    display: none;
+  }
+}
+
 /* ----- Contenu principal ----- */
 main {
   padding-top: 4rem;
@@ -257,10 +282,10 @@ section + section {
 
 .hero-dots {
   position: absolute;
-  top: 0;
+  top: -4rem; /* remonte jusqu'au header (padding-top de main) */
+  bottom: -52px; /* fin du hero + 2 lignes de points (2 × 26px), avant "Cas client" */
   right: 0;
   width: 600px;
-  height: 500px;
   background-image: radial-gradient(
     rgba(239, 159, 39, 0.15) 1.5px,
     transparent 1.5px
@@ -283,14 +308,22 @@ section + section {
 }
 
 .hero-title {
-  font-size: clamp(2.3rem, 5vw, 3.4rem);
+  font-size: 58px;
+  font-weight: 700;
   color: var(--color-text);
   padding-left: 0;
-  margin: 0 0 var(--space-md);
+  margin: 0 0 var(--space-xs);
 }
 
 .hero-title::before {
   content: none;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-md);
 }
 
 .pitch p {
@@ -371,9 +404,33 @@ section + section {
   stroke-linejoin: round;
 }
 
-.case-card h3 {
+.case-card .case-title {
   position: relative;
   color: var(--color-text);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--space-sm);
+  flex-grow: 0;
+}
+
+.case-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.case-chips li {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #9db3cc;
 }
 
 .case-card p {
@@ -526,6 +583,9 @@ section + section {
 
 /* ----- Pied de page ----- */
 .site-footer {
+  position: relative;
+  z-index: 2;
+  background-color: var(--color-bg);
   border-top: 1px solid var(--color-border);
   padding: var(--space-lg) 0;
 }
@@ -557,10 +617,6 @@ section + section {
   font-size: 1.1rem;
 }
 
-.footer-brand:hover,
-.footer-brand:focus-visible {
-  color: var(--color-accent);
-}
 
 .footer-bottom {
   margin-top: var(--space-lg);
@@ -631,7 +687,8 @@ section + section {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: var(--color-text-muted);
+  align-self: flex-start;
+  color: var(--color-accent);
   font-size: 0.9rem;
   white-space: nowrap;
 }
@@ -645,4 +702,5 @@ section + section {
 .footer-linkedin:hover,
 .footer-linkedin:focus-visible {
   color: var(--color-accent);
+  text-decoration: underline;
 }
