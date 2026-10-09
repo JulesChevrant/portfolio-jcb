@@ -139,14 +139,6 @@ p {
   justify-content: space-between;
 }
 
-.nav-heading {
-  margin: 0;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  letter-spacing: normal;
-}
-
 .nav-brand {
   display: block;
 }
@@ -319,11 +311,23 @@ section + section {
   content: none;
 }
 
+/* Le nom tient sur une ligne, même au-delà de la largeur du pitch */
+@media (min-width: 769px) {
+  .hero-title {
+    white-space: nowrap;
+  }
+}
+
 .hero-subtitle {
   font-size: 18px;
   font-weight: 700;
   color: var(--color-accent);
+  padding-left: 0;
   margin: 0 0 var(--space-md);
+}
+
+.hero-subtitle::before {
+  content: none;
 }
 
 .pitch p {
