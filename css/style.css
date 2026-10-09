@@ -761,3 +761,23 @@ section + section {
   font-size: 0.95rem;
   font-weight: 600;
 }
+
+/* ----- Parcours : espacements resserrés sur desktop ----- */
+@media (min-width: 769px) {
+  section:has(> .timeline),
+  section:has(> .timeline) + .info-grid {
+    margin-top: 5rem;
+  }
+
+  .timeline-entry {
+    padding-bottom: 2.75rem;
+  }
+
+  section:has(> .timeline) + section .timeline-entry:not(:last-child) {
+    padding-bottom: 1.75rem;
+  }
+
+  .timeline-entry:last-child {
+    padding-bottom: 0;
+  }
+}
