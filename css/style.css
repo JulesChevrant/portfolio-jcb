@@ -711,3 +711,53 @@ section + section {
   color: var(--color-accent);
   text-decoration: underline;
 }
+
+/* ----- Parcours : frise et rôles ----- */
+
+/* ----- Frise : le point orange est réservé à l'expérience en cours ----- */
+.timeline-entry:not(.is-current)::before {
+  background-color: var(--color-text-muted);
+}
+
+.timeline-entry.is-current::before {
+  box-shadow: 0 0 0 4px rgba(239, 159, 39, 0.12);
+}
+
+/* ----- Les trois rôles Lamy Liaisons : mis en avant dans des cartes ----- */
+.timeline-role {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: var(--space-sm) var(--space-md);
+}
+
+.timeline-role.is-current {
+  border-color: rgba(239, 159, 39, 0.35);
+}
+
+.timeline-role > :last-child {
+  margin-bottom: 0;
+}
+
+/* ----- Listes à puces dans la frise ----- */
+.timeline-bullets {
+  list-style: disc;
+  padding-left: 1.1rem;
+  margin: 0.5rem 0 0;
+}
+
+.timeline-bullets li {
+  margin: 0.4rem 0;
+}
+
+.timeline-bullets li::marker {
+  color: var(--color-accent);
+}
+
+/* ----- Lien vers l'étude de cas (même style que les autres liens du site) ----- */
+.timeline-bullets .case-link {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
