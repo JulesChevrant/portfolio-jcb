@@ -6,12 +6,13 @@
   <title>Intégration de l'IA générative — Jules Chevrant-Breton</title>
   <meta
     name="description"
-    content="Étude de cas : déploiement de fonctionnalités d'IA générative (traduction, résumé, assistant conversationnel RAG) sur des plateformes juridiques."
+    content="Cas client : intégration de l'IA générative sur des plateformes de documentation juridique — assistant conversationnel, traduction, résumé, points-clés et chat avec un document."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cas-client.css" />
 </head>
 <body>
   <div class="page-rule" aria-hidden="true"></div>
@@ -34,51 +35,166 @@
   </header>
 
   <main class="container">
-    <article>
-      <h1>Intégration de l'IA générative</h1>
+    <article class="cas">
 
-      <div class="project-meta">
-        <span><strong>Client</strong> — éditeur juridique historique français</span>
-        <span><strong>Durée</strong> — ~1 an</span>
-        <span><strong>Dispositif</strong> — PO + UX + devs (co-pilotage avec PM IA dédié)</span>
-        <span><strong>Périmètre</strong> — 3 plateformes juridiques</span>
-      </div>
+      <!-- En-tête du cas client -->
+      <header class="cas-hero">
+        <p class="cas-eyebrow">Cas client · Édition juridique B2B</p>
+        <h1>Intégration de l'IA générative sur des plateformes de documentation juridique</h1>
+        <p class="cas-lead">
+          Déployer l'IA générative au service de la productivité des
+          professionnels du droit : un assistant conversationnel et des
+          fonctionnalités d'aide à la lecture de documents.
+        </p>
 
+        <dl class="cas-facts">
+          <div class="cas-fact">
+            <dt>Client</dt>
+            <dd>Éditeur juridique historique français, proposant via ses plateformes l'accès à des millions de documents pour les professionnels du droit.</dd>
+          </div>
+          <div class="cas-fact">
+            <dt>Mon rôle</dt>
+            <dd>Product Owner, co-pilote avec un PM IA dédié</dd>
+          </div>
+          <div class="cas-fact">
+            <dt>Durée</dt>
+            <dd>~1 an</dd>
+          </div>
+          <div class="cas-fact">
+            <dt>Dispositif</dt>
+            <dd>PM IA dédié, UX/UI, développeurs et testeurs juridiques</dd>
+          </div>
+        </dl>
+      </header>
+
+      <!-- Contexte -->
       <section>
         <h2>Contexte et enjeux</h2>
         <p>
-          Face à des concurrents historiques et des legal techs, l'éditeur
-          intègre l'IA générative pour simplifier l'accès à une
-          documentation dense (doctrine et sources officielles) et affirmer
-          son positionnement d'innovation.
+          Face à des concurrents historiques et à des legal techs, l'éditeur
+          intègre l'IA générative pour simplifier l'accès à une documentation
+          dense (doctrine et sources officielles) et affirmer son
+          positionnement d'innovation.
         </p>
-      </section>
-
-      <section>
-        <h2>Réalisations</h2>
-        <p>Déploiement de deux fonctionnalités d'IA générative (prompting, architecture RAG) :</p>
-        <ul>
-          <li>Traduction et résumé automatique de documents juridiques</li>
-          <li>Assistant juridique conversationnel</li>
+        <ul class="cas-stakes">
+          <li>
+            <span class="cas-stake-num" aria-hidden="true">01</span>
+            <h3>Simplifier l'accès à la documentation</h3>
+            <p>Faciliter la consultation d'un fonds juridique dense.</p>
+          </li>
+          <li>
+            <span class="cas-stake-num" aria-hidden="true">02</span>
+            <h3>Gagner en productivité</h3>
+            <p>Outiller les professionnels du droit dans leurs recherches et leurs lectures.</p>
+          </li>
+          <li>
+            <span class="cas-stake-num" aria-hidden="true">03</span>
+            <h3>Affirmer l'innovation</h3>
+            <p>Se positionner face aux concurrents historiques et aux legal techs.</p>
+          </li>
         </ul>
       </section>
 
+      <!-- Réalisations -->
+      <section>
+        <h2>Réalisations</h2>
+        <p class="cas-intro">Conception et déploiement de fonctionnalités d'IA générative sur les plateformes de l'éditeur.</p>
+
+        <ul class="cas-cards">
+          <li class="cas-card cas-card-featured">
+            <h3>Assistant juridique conversationnel</h3>
+            <p>Assistant interrogeant l'ensemble du fonds de l'éditeur, via une architecture RAG.</p>
+          </li>
+          <li class="cas-card">
+            <h3>Traduction et résumé</h3>
+            <p>Traduction et résumé automatiques de documents juridiques, dont la doctrine et la jurisprudence.</p>
+          </li>
+          <li class="cas-card">
+            <h3>Points-clés et chat avec un document</h3>
+            <p>Points-clés d'un document et conversation avec son contenu.</p>
+          </li>
+          <li class="cas-card">
+            <h3>Prompting et tests avec des juristes</h3>
+            <p>Prompts conçus et testés avec des juristes pour contrôler la qualité des réponses.</p>
+          </li>
+          <li class="cas-card">
+            <h3>Déploiement sur 3 plateformes</h3>
+            <p>Fonctionnalités disponibles sur les 3 plateformes de l'éditeur juridique.</p>
+          </li>
+          <li class="cas-card">
+            <h3>Amélioration continue</h3>
+            <p>Évolution des prompts pour améliorer les réponses, mises à jour régulières des versions de l'IA, maintenance et bugs.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Rôle -->
       <section>
         <h2>Mon rôle</h2>
-        <p>
-          Cadrage produit des fonctionnalités IA (spécifications,
-          priorisation, arbitrages) avec le PM IA dédié, pilotage transverse
-          avec les équipes UX, développement et testeurs de la qualité
-          juridique jusqu'à la mise en production. Gestion de la maintenance
-          et des bugs post-déploiement.
+        <p class="cas-intro">
+          Product Owner des fonctionnalités IA, du cadrage à la mise en
+          production, en co-pilotage avec un PM IA dédié.
         </p>
+
+        <div class="cas-role">
+          <div class="cas-role-col">
+            <h3>Discovery</h3>
+            <ul>
+              <li>Cadrage produit</li>
+              <li>Spécifications fonctionnelles</li>
+              <li>Priorisation et arbitrages</li>
+              <li>Prompting</li>
+            </ul>
+          </div>
+          <div class="cas-role-col">
+            <h3>Delivery</h3>
+            <ul>
+              <li>Tests avec des juristes</li>
+              <li>Mise en production</li>
+              <li>Gestion des évolutions de version de l'IA</li>
+              <li>Maintenance et bugs post-déploiement</li>
+            </ul>
+          </div>
+          <div class="cas-role-col">
+            <h3>Coordination</h3>
+            <ul>
+              <li>Équipes UX et développement</li>
+              <li>Testeurs de la qualité juridique</li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="case-chips cas-skills" aria-label="Compétences mobilisées">
+          <li>IA générative</li>
+          <li>RAG</li>
+          <li>LLM</li>
+          <li>Prompting</li>
+        </ul>
       </section>
 
+      <!-- Outils -->
       <section>
         <h2>Outils</h2>
-        <p class="project-tools">Jira, Adobe XD, Figma, Power BI</p>
+        <ul class="cas-tools">
+          <li class="cas-tool">
+            <img class="cas-tool-logo" src="images/tools/jira.svg" alt="" width="22" height="22" loading="lazy" onerror="this.remove()" />
+            <span class="cas-tool-name">Jira</span>
+            <span class="cas-tool-use">Backlog et suivi des développements</span>
+          </li>
+          <li class="cas-tool">
+            <img class="cas-tool-logo" src="images/tools/figma.svg" alt="" width="22" height="22" loading="lazy" onerror="this.remove()" />
+            <span class="cas-tool-name">Figma</span>
+            <span class="cas-tool-use">Maquettes et prototypes</span>
+          </li>
+          <li class="cas-tool">
+            <img class="cas-tool-logo" src="images/tools/claude.svg" alt="" width="22" height="22" loading="lazy" onerror="this.remove()" />
+            <span class="cas-tool-name">Claude</span>
+            <span class="cas-tool-use">Assistant PO, rédaction et conception, tests</span>
+          </li>
+        </ul>
       </section>
 
+      <!-- Wireframe -->
       <section>
         <h2>Wireframe</h2>
         <div class="wireframe-placeholder">
@@ -90,6 +206,18 @@
           <div class="wireframe-body">Wireframe à venir</div>
         </div>
       </section>
+
+      <!-- Navigation entre cas clients -->
+      <nav class="cas-next" aria-label="Autres cas clients">
+        <a class="cas-next-link" href="projet-cridon.html">
+          <span class="cas-next-label">Cas client suivant</span>
+          <span class="cas-next-title">Refonte Crid'online →</span>
+        </a>
+        <a class="cas-next-link" href="projet-fusion.html">
+          <span class="cas-next-label">À découvrir aussi</span>
+          <span class="cas-next-title">Fusion de plateformes →</span>
+        </a>
+      </nav>
     </article>
   </main>
 
