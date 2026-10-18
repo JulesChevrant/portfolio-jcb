@@ -108,7 +108,7 @@ production.
 ## Étude de cas 2 — Intégration de l'IA générative
 
 **Client** : éditeur juridique historique français.
-**Durée** : ~1 an | **Dispositif** : PO + UX + devs (co-pilotage avec PM IA dédié)
+**Durée** : ~1 an | **Dispositif** : PO + UX + devs (co-pilotage avec PM IA)
 **Périmètre** : 3 plateformes juridiques
 
 **Contexte et enjeux** : face à des concurrents historiques et des legal
@@ -122,7 +122,7 @@ positionnement d'innovation.
 - Assistant juridique conversationnel
 
 **Mon rôle** : cadrage produit des fonctionnalités IA (spécifications,
-priorisation, arbitrages) avec le PM IA dédié, pilotage transverse avec les
+priorisation, arbitrages) avec le PM IA, pilotage transverse avec les
 équipes UX, développement et testeurs de la qualité juridique jusqu'à la
 mise en production. Gestion de la maintenance et des bugs post-déploiement.
 
