@@ -6,12 +6,14 @@
   <title>Refonte Crid'online — Jules Chevrant-Breton</title>
   <meta
     name="description"
-    content="Étude de cas : refonte complète d'une plateforme de documentation juridique dédiée aux notaires, en partenariat avec Cridon Lyon."
+    content="Cas client : refonte complète d'une plateforme de documentation juridique pour notaires, opérée pour le compte d'une organisation professionnelle — UX/UI, responsive, accessibilité, nouveaux contenus et IA générative."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cas-client.css" />
+  <link rel="stylesheet" href="css/cas-toc.css" />
 </head>
 <body>
   <div class="page-rule" aria-hidden="true"></div>
@@ -34,63 +36,197 @@
   </header>
 
   <main class="container">
-    <article>
-      <h1>Refonte d'une plateforme de documentation juridique (partenariat Cridon Lyon)</h1>
+    <article class="cas">
 
-      <div class="project-meta">
-        <span><strong>Client</strong> — éditeur juridique historique français, dans le cadre d'un partenariat avec une organisation professionnelle de notaires</span>
-        <span><strong>Durée</strong> — ~1 an</span>
-        <span><strong>Dispositif</strong> — PM + UX + développeurs</span>
-        <span><strong>Périmètre</strong> — plateforme dédiée aux notaires</span>
-      </div>
+      <!-- En-tête du cas client -->
+      <header class="cas-hero">
+        <p class="cas-eyebrow">Cas client · Édition juridique B2B</p>
+        <h1>Refonte d'une plateforme de documentation juridique pour notaires</h1>
+        <p class="cas-lead">
+          Moderniser une plateforme existante et l'enrichir de nouveaux
+          contenus et de fonctionnalités d'IA générative, dans le cadre d'un
+          partenariat avec une organisation professionnelle de notaires.
+        </p>
 
+        <dl class="cas-facts">
+          <div class="cas-fact">
+            <dt>Client</dt>
+            <dd>Éditeur juridique historique français, proposant via ses plateformes l'accès à des millions de documents pour les professionnels du droit.</dd>
+          </div>
+          <div class="cas-fact">
+            <dt>Mon rôle</dt>
+            <dd>Product Manager</dd>
+          </div>
+          <div class="cas-fact">
+            <dt>Durée</dt>
+            <dd>~1 an</dd>
+          </div>
+          <div class="cas-fact">
+            <dt>Dispositif</dt>
+            <dd>PM, UX/UI et développeurs</dd>
+          </div>
+        </dl>
+      </header>
+
+      <!-- Contexte -->
       <section>
         <h2>Contexte et enjeux</h2>
         <p>
-          Dans le cadre de ce partenariat, l'éditeur engage la refonte
-          complète d'une plateforme de documentation juridique qu'il opère
-          pour leur compte.
+          Dans le cadre d'un partenariat avec une organisation professionnelle
+          de notaires, l'éditeur engage la refonte complète d'une plateforme de
+          documentation juridique qu'il opère pour leur compte.
         </p>
-      </section>
-
-      <section>
-        <h2>Réalisations</h2>
-        <ul>
-          <li>Refonte UX/UI de la navigation et de la consultation des documents, ajout de fonctionnalités</li>
-          <li>Optimisation du responsive et mise en conformité accessibilité numérique</li>
-          <li>Intégration de nouveaux contenus juridiques</li>
-          <li>Déploiement de fonctionnalités basées sur l'IA générative (traduction/résumé, assistant conversationnel juridique RAG)</li>
-          <li>Mise en place d'un rapport automatisé de suivi des données d'utilisation</li>
+        <ul class="cas-stakes">
+          <li>
+            <span class="cas-stake-num" aria-hidden="true">01</span>
+            <h3>Moderniser l'expérience</h3>
+            <p>Repenser la navigation et la consultation des documents, sur tous les écrans et de façon accessible.</p>
+          </li>
+          <li>
+            <span class="cas-stake-num" aria-hidden="true">02</span>
+            <h3>Enrichir la plateforme</h3>
+            <p>Étoffer les contenus juridiques et apporter les fonctionnalités d'IA générative de l'éditeur.</p>
+          </li>
+          <li>
+            <span class="cas-stake-num" aria-hidden="true">03</span>
+            <h3>Répondre aux besoins du partenaire</h3>
+            <p>Cadrer la refonte avec l'organisation de notaires, de la conception à la livraison.</p>
+          </li>
         </ul>
       </section>
 
+      <!-- Réalisations -->
+      <section>
+        <h2>Réalisations</h2>
+        <p class="cas-intro">Refonte complète de la plateforme, de l'expérience utilisateur aux contenus et aux fonctionnalités.</p>
+
+        <ul class="cas-cards">
+          <li class="cas-card cas-card-featured">
+            <h3>Refonte UX/UI</h3>
+            <p>Nouvelle navigation, consultation des documents repensée et ajout de fonctionnalités.</p>
+          </li>
+          <li class="cas-card">
+            <h3>Fonctionnalités d'IA générative</h3>
+            <p>Traduction, résumé et assistant juridique conversationnel (RAG), déjà disponibles sur la plateforme principale de l'éditeur.</p>
+          </li>
+          <li class="cas-card">
+            <h3>Responsive</h3>
+            <p>Optimisation de l'affichage de la plateforme selon les écrans.</p>
+          </li>
+          <li class="cas-card">
+            <h3>Accessibilité numérique</h3>
+            <p>Mise en conformité de la plateforme avec les exigences d'accessibilité numérique.</p>
+          </li>
+          <li class="cas-card">
+            <h3>Nouveaux contenus juridiques</h3>
+            <p>Intégration de nouveaux contenus à la plateforme.</p>
+          </li>
+          <li class="cas-card">
+            <h3>Rapport de suivi des usages</h3>
+            <p>Mise en place d'un rapport automatisé de suivi des données d'utilisation.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Rôle -->
       <section>
         <h2>Mon rôle</h2>
-        <p>
-          Pilotage du projet de refonte, cadrage des besoins avec le
-          partenaire, co-conception UX (parcours, maquettes, ateliers
-          utilisateurs), rédaction des User Stories, tests de recette
-          fonctionnelle, coordination avec les équipes design et
-          développement jusqu'à la livraison, maintenance technique.
+        <p class="cas-intro">
+          Product Manager de la refonte : pilotage du projet, du cadrage avec
+          le partenaire jusqu'à la livraison, puis maintenance technique.
         </p>
+
+        <div class="cas-role">
+          <div class="cas-role-col">
+            <h3>Discovery</h3>
+            <ul>
+              <li>Cadrage des besoins avec le partenaire</li>
+              <li>Parcours utilisateurs</li>
+              <li>Maquettes, co-construites avec les designers UX/UI</li>
+              <li>Ateliers utilisateurs</li>
+            </ul>
+          </div>
+          <div class="cas-role-col">
+            <h3>Delivery</h3>
+            <ul>
+              <li>Rédaction des User Stories</li>
+              <li>Tests de recette fonctionnelle</li>
+              <li>Livraison</li>
+              <li>Maintenance technique post-livraison</li>
+            </ul>
+          </div>
+          <div class="cas-role-col">
+            <h3>Coordination</h3>
+            <ul>
+              <li>Équipes design et développement</li>
+              <li>Partenaire, organisation professionnelle de notaires</li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="case-chips cas-skills" aria-label="Compétences mobilisées">
+          <li>Refonte produit</li>
+          <li>Gestion de partenariat</li>
+          <li>Discovery et conception UX</li>
+          <li>Responsive</li>
+          <li>Accessibilité numérique</li>
+          <li>IA générative</li>
+          <li>Tests de recette</li>
+          <li>Maintenance</li>
+        </ul>
       </section>
 
+      <!-- Outils -->
       <section>
         <h2>Outils</h2>
-        <p class="project-tools">Jira, Figma, Claude, Power BI</p>
+        <ul class="cas-tools">
+          <li class="cas-tool">
+            <img class="cas-tool-logo" src="images/tools/jira.svg" alt="" width="22" height="22" loading="lazy" onerror="this.remove()" />
+            <span class="cas-tool-name">Jira</span>
+            <span class="cas-tool-use">Backlog et User Stories</span>
+          </li>
+          <li class="cas-tool">
+            <img class="cas-tool-logo" src="images/tools/figma.svg" alt="" width="22" height="22" loading="lazy" onerror="this.remove()" />
+            <span class="cas-tool-name">Figma</span>
+            <span class="cas-tool-use">Maquettes et prototypes</span>
+          </li>
+          <li class="cas-tool">
+            <img class="cas-tool-logo" src="images/tools/openai.svg" alt="" width="22" height="22" loading="lazy" onerror="this.remove()" />
+            <span class="cas-tool-name">OpenAI</span>
+            <span class="cas-tool-use">Modèles GPT de l'assistant IA</span>
+          </li>
+          <li class="cas-tool">
+            <img class="cas-tool-logo" src="images/tools/power-bi.svg" alt="" width="22" height="22" loading="lazy" onerror="this.remove()" />
+            <span class="cas-tool-name">Power BI</span>
+            <span class="cas-tool-use">Rapport de suivi des usages</span>
+          </li>
+        </ul>
       </section>
 
+      <!-- Wireframes (à venir : 2 à 3 écrans anonymisés) -->
       <section>
-        <h2>Wireframe</h2>
+        <h2>Wireframes</h2>
         <div class="wireframe-placeholder">
           <div class="wireframe-bar">
             <span class="wireframe-dot wireframe-dot-red"></span>
             <span class="wireframe-dot wireframe-dot-yellow"></span>
             <span class="wireframe-dot wireframe-dot-green"></span>
           </div>
-          <div class="wireframe-body">Wireframe à venir</div>
+          <div class="wireframe-body">Wireframes à venir</div>
         </div>
       </section>
+
+      <!-- Navigation entre cas clients -->
+      <nav class="cas-next" aria-label="Autres cas clients">
+        <a class="cas-next-link" href="projet-fusion.html">
+          <span class="cas-next-label">Cas client suivant</span>
+          <span class="cas-next-title">Fusion de plateformes →</span>
+        </a>
+        <a class="cas-next-link" href="projet-ia.html">
+          <span class="cas-next-label">À découvrir aussi</span>
+          <span class="cas-next-title">Intégration de l'IA générative →</span>
+        </a>
+      </nav>
     </article>
   </main>
 
@@ -122,5 +258,6 @@
   </footer>
 
   <script src="js/nav.js"></script>
+  <script src="js/cas-toc.js"></script>
 </body>
 </html>
