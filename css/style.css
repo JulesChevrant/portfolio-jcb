@@ -192,6 +192,88 @@ p {
   border-bottom-color: var(--color-accent);
 }
 
+/* ----- Menu déroulant « Cas clients » ----- */
+.nav-item-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0 0 0.3rem;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: inherit;
+  color: var(--color-text-muted);
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.nav-dropdown-toggle:hover,
+.nav-dropdown-toggle:focus-visible,
+.nav-dropdown-toggle[aria-expanded="true"] {
+  color: var(--color-accent);
+}
+
+.nav-dropdown-toggle.is-current {
+  color: var(--color-accent);
+  font-weight: 600;
+  border-bottom-color: var(--color-accent);
+}
+
+.nav-chevron {
+  width: 10px;
+  height: 10px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  transition: transform 0.15s ease;
+}
+
+.nav-dropdown-toggle[aria-expanded="true"] .nav-chevron {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.9rem);
+  right: 0;
+  min-width: 15rem;
+  padding: 0.4rem;
+  background-color: var(--color-header-bg);
+  border: 1px solid var(--color-header-border);
+  border-radius: 8px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
+}
+
+.nav-dropdown.is-open {
+  display: block;
+}
+
+.nav-list .nav-dropdown a {
+  display: block;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 0;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.nav-list .nav-dropdown a:hover,
+.nav-list .nav-dropdown a:focus-visible {
+  background-color: rgba(244, 246, 248, 0.06);
+}
+
+.nav-list .nav-dropdown a[aria-current="page"] {
+  color: var(--color-accent);
+}
+
 @media (max-width: 640px) {
   .nav-toggle {
     display: block;
@@ -212,13 +294,40 @@ p {
   }
 
   .nav-list.is-open {
-    max-height: 20rem;
+    max-height: 26rem;
   }
 
   .nav-list a {
     display: block;
     padding: var(--space-sm) var(--space-md);
     border-top: 1px solid var(--color-border);
+  }
+
+  .nav-dropdown-toggle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: var(--space-sm) var(--space-md);
+    border-top: 1px solid var(--color-border);
+    text-align: left;
+  }
+
+  .nav-dropdown {
+    position: static;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .nav-list .nav-dropdown a {
+    padding: var(--space-sm) var(--space-md);
+    padding-left: calc(var(--space-md) * 1.5);
+    border-top: 1px solid var(--color-border);
+    border-radius: 0;
+    white-space: normal;
   }
 
   .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {

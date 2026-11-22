@@ -26,9 +26,17 @@
       <ul class="nav-list" id="nav-list">
         <li><a href="index.html" aria-current="page">Accueil</a></li>
         <li><a href="parcours.html">Parcours</a></li>
-        <li><a href="projet-fusion.html">Fusion de plateformes</a></li>
-        <li><a href="projet-ia.html">IA générative</a></li>
-        <li><a href="projet-cridon.html">Refonte Crid'online</a></li>
+        <li class="nav-item-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="nav-cas-clients">
+            Cas clients
+            <svg class="nav-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="nav-dropdown" id="nav-cas-clients">
+            <li><a href="projet-fusion.html">Fusion de plateformes</a></li>
+            <li><a href="projet-ia.html">IA générative</a></li>
+            <li><a href="projet-cridon.html">Refonte Crid'online</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
